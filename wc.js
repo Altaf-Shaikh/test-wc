@@ -33,7 +33,7 @@ class MyCounter extends HTMLElement {
             documentType: 'NIT'
        }
       }
-     })
+     });
     this.dispatchEvent(event);
   }
 }
