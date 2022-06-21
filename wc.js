@@ -23,11 +23,17 @@ class MyCounter extends HTMLElement {
   }
 
   triggerEvent() {
-    const event = new CustomEvent('wcVerifyDocument', { data: {
-      documentCountry: 'NI',
-      documentNumber: '123456',
-      documentType: 'NIT'
-    } })
+    const event = new CustomEvent('wcVerifyDocument', { 
+       detail: {
+        eventType: 'wcVerifyDocument',
+        eventId: 'wcVerifyDocument,
+        data: {
+            documentCountry: 'NI',
+            documentNumber: '123456',
+            documentType: 'NIT'
+       }
+      }
+     })
     this.dispatchEvent(event);
   }
 }
