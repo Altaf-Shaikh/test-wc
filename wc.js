@@ -26,7 +26,7 @@ class MyCounter extends HTMLElement {
     const event = new CustomEvent('wcVerifyDocument', { 
        detail: {
         eventType: 'wcVerifyDocument',
-        eventId: 'wcVerifyDocument,
+        eventId: 'wcVerifyDocument',
         data: {
             documentCountry: 'NI',
             documentNumber: '123456',
